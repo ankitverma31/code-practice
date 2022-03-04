@@ -1,4 +1,5 @@
-// Problem Statement: Sum zero for sorted arrays
+// Problem Statement: Implement a function called sumZero, which accepts a sorted array, and returns the first pair where sum is zero. There can be negative numbers in the array, but it will always be sorted.
+// sumZero([-4,-3,-2,-1,0,2]) // [-2,2]
 // Complexity: O(N)
 
 function sumZero(arr){
@@ -16,4 +17,4 @@ function sumZero(arr){
     }
 }
 
-console.log(console.log([-4,-3,-2,-1,3,4,5]));
+console.log(sumZero([-4,-3,-2,-1,3,4,5]));
