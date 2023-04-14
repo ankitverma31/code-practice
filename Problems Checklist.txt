@@ -1,0 +1,38 @@
+Problems Checklist
+- Polyfill for getElementsByClassName(
+- Aggregator
+- groupBy
+- Implement browser history in JavaScript
+- Method chaining
+- promiseallsettled
+- promiseall
+- promiserace
+- async task in series
+- flatarr polyfill
+- observer pattern
+- singleton
+- sampler
+- clearalltimeout
+- clearinterval
+- streamsapi
+- chunk Arr
+- chunk string
+- streamspai
+- currying
+- debounce
+- deepflat obj
+
+-------------------------------
+pending:
+https://learnersbucket.com/examples/interview/implement-custom-instanceof-method/
+https://learnersbucket.com/examples/interview/promise-finally-polyfill/
+https://learnersbucket.com/examples/interview/check-if-function-is-called-with-new-keyword/
+
+https://learnersbucket.com/examples/interview/in-memory-filesystem-library-in-javascript/
+
+Page 2:
+https://learnersbucket.com/examples/interview/remove-cycle-from-the-object-in-javascript/
+
+https://learnersbucket.com/examples/interview/debounce-function-with-immediate-flag-in-javascript/
+https://learnersbucket.com/examples/array/compare-two-array-or-object-with-javascript/
+https://learnersbucket.com/examples/interview/how-to-merge-objects-in-javascript/

@@ -3,7 +3,7 @@
 function flatten(arr){
     let result = [];
     function flattenHelper(arr){
-        if(arr.length == 0) return result;
+        if(arr.length == 0) return;
         let x = arr.pop();
         if(Array.isArray(x)) {
             flattenHelper(x);
