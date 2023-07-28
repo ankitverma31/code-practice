@@ -17,7 +17,7 @@ class BrowserHistory {
     this.index = Math.max(0, --this.index);
   }
   // go goForward
-  gogoForward() {
+  goForward() {
     this.index = Math.min(this.history.length - 1, ++this.index);
   }
 }

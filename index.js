@@ -1,5 +1,22 @@
-// Problem Statement:
-// Write a funciton called same, which accepts two arrays. The function should return true if every value in the array has its corresponding value squared in the second array. The frequency of values must be same
-// Complexity: O(N)
-
-
+function isUblockOriginInstalled(callback) {
+    var img = document.createElement('img');
+    img.src = 'https://ublockorigin.com/img/icon-48.png';
+    img.onload = function() {
+      if ((typeof img.naturalWidth !== 'undefined' && img.naturalWidth === 48) || (typeof img.width !== 'undefined' && img.width === 48)) {
+        callback(true);
+      } else {
+        callback(false);
+      }
+    };
+    img.onerror = function() {
+      callback(false);
+    };
+  }
+  
+  isUblockOriginInstalled(function(installed) {
+    if (installed) {
+      console.log('uBlock Origin is installed.');
+    } else {
+      console.log('uBlock Origin is NOT installed.');
+    }
+  });

@@ -1,6 +1,6 @@
 // Problem Statement: Implement clearAllTimeouts in JavaScript
 
-window.timeoutIds = [];
+const timeoutIds = [];
 const originalST = window.setTimeout;
 window.setTimeout = function (fn, delay) {
   const id = originalST(fn, delay);
@@ -24,5 +24,5 @@ setTimeout(() => {
 clearAllTimeouts();
 
 setTimeout(() => {
-  console.log("Timeout 2");
+  console.log("Timeout 3");
 }, 2000);

@@ -1,12 +1,12 @@
 // Problem Statement: Advanced Currying
 
 const curry = (fn) => {
-  return (curried = (...args) => {
+  return function curried(...args) {
     if (fn.length !== args.length) {
       return curried.bind(null, ...args);
     }
     return fn(...args);
-  });
+  };
 };
 
 const totalNum = (a, b, c) => a + b + c;
