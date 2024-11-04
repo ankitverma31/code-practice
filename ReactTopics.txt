@@ -1,0 +1,33 @@
+React Topics :
+
+1. Hooks:
+- useState, useEffect, useContext, useReducer, useMemo, useCallback, useRef
+
+2. Higher Order Components:
+Why, when, how use?
+
+3. Life cycle methods of components:
+
+4. State Management (Data Management, Props drilling), useContext, State/Props
+
+5. Redux(How, why, when),RTK (Redux toolkit), Zustand
+
+6. Custom Hooks (When use? code?)
+
+7. Lazy Loading (Code splitting, chunking, Suspense)
+
+8. Virtual DOM (Reconciliation Algo, React Fibre, Diff Algorithm, How Render Works?)
+
+9. SSR vs CSR(SEO, Performance)
+
+10. Routing, RBAC, react-router, Protected Routes, Query Params, Dynamic Routing
+
+11. Testing
+
+12. Async Tasks, API Calls, fetch(), promiseallsettled
+
+13. Reusability, Modularity, Testability (Coding Practice), Web Accessibility, Security
+
+14. Performance (Shimmer UI, Lazy Loading, Asset Optimisation, Bundler, CDN, Serve Optimisation, Set Timeout)
+
+15. Styling (TailWind, Bootstrap, StyleX, MUI, CSS/SCSS), Pros/Cons

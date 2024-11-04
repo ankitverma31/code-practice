@@ -1,5 +1,5 @@
 const person = {
-  A: "12",
+  A: '12',
   B: 23,
   C: {
     P: 23,
@@ -8,24 +8,23 @@ const person = {
     },
     Q: [1, 2],
   },
-};
+}
 
-const deepFlatten = (obj) => {
-  const result = {};
-  const deepFlattenHelper = (obj) => {
-    for (const key in obj) {
-      const currKey = key;
-      const currVal = obj[currKey];
-      if (Array.isArray(currVal) || typeof currVal !== "object") {
-        result[currKey] = currVal;
-      } else {
-        deepFlattenHelper(obj[key]);
-      }
+function deepFlatten(obj, parentKey = '', result = {}) {
+  for (let key in obj) {
+    // Construct the new key based on the current property
+    const newKey = parentKey ? `${parentKey}.${key}` : key
+
+    // If the value is an object, recurse deeper
+    if (typeof obj[key] === 'object' && obj[key] !== null && !Array.isArray(obj[key])) {
+      deepFlatten(obj[key], newKey, result)
+    } else {
+      // If it's not an object, add it to the result
+      result[newKey] = obj[key]
     }
-  };
-  deepFlattenHelper(obj);
-  return result;
-};
+  }
+  return result
+}
 
-const finalObj = deepFlatten(person);
-console.log(finalObj);
+const finalObj = deepFlatten(person)
+console.log(finalObj)
