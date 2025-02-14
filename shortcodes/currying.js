@@ -36,3 +36,17 @@ const curriedTotal = curry(totalNum)
 console.log(curriedTotal(10)(20)(30))
 console.log(curriedTotal(10, 20, 30))
 console.log(curriedTotal(10, 20)(30))
+
+function add(a) {
+  return function (b) {
+    if (b === undefined) return a // Stop when () is encountered
+    return add(a + b) // Continue adding numbers
+  }
+}
+
+const add = (a) => (b) => b === undefined ? a : add(a + b)
+
+// Usage:
+console.log(add(4)(3)()) // Output: 7
+console.log(add(1)(2)(3)(4)()) // Output: 10
+console.log(add(10)()) // Output: 10
