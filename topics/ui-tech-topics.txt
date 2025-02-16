@@ -1,0 +1,82 @@
+1. Web Platform Understanding
+
+    - DOM & Virtual DOM
+        - How the DOM works and how browsers render pages
+        - Differences between Real DOM and Virtual DOM
+        - How React, Vue, or other frameworks optimize DOM manipulations
+
+    - Event Loop & Concurrency in JS
+        - Call Stack, Web APIs, Callback Queue, and Microtask Queue
+        - setTimeout, setImmediate, requestAnimationFrame, and Promises
+        - Execution order of synchronous vs asynchronous code
+
+    - Service Workers & Web Workers
+        - How Service Workers help in PWA (Progressive Web Apps)
+        - Web Workers for offloading heavy computations
+
+
+2. HTML, CSS, JS Deep Dive
+
+   - HTML
+        - Semantic HTML and Accessibility (ARIA roles)
+        - Forms & Validations (native and JS-based)
+        - Custom Elements & Web Components
+
+   - CSS
+        - Layouts: Flexbox, Grid, CSS Subgrid
+        - Positioning, Z-index, Stacking Context
+        - CSS Performance Optimization (paint, composite layers)
+        - Modern CSS: CSS Variables, Container Queries
+        - Animations: CSS vs JS-based animations
+
+   - JavaScript
+        - Closures, Hoisting, Event Delegation
+        - Prototypes & Inheritance
+        - Functional Programming in JS
+        - Debouncing vs Throttling
+        - Modern JS Features (ES6+): Optional Chaining, Nullish Coalescing, Generators
+        - Memory Management: Garbage Collection, Memory Leaks
+        - JS Engines: V8, JIT Compilation
+
+
+3. Web Performance Optimization
+    - Critical Rendering Path & Rendering Pipeline
+    - First Contentful Paint (FCP), Largest Contentful Paint (LCP), CLS (Cumulative Layout Shift)
+    - Optimizing Rendering Performance (Avoiding Reflows & Repaints)
+    - Image Optimization (WebP, AVIF, Lazy Loading)
+    - Caching Strategies (Service Workers, HTTP Caching, Cache-Control headers)
+    - Code Splitting & Tree Shaking
+    - Preloading, Prefetching, and Preconnect
+
+
+4. Browser Internals
+    - How Browsers Render Web Pages (Parsing, Layout, Painting, Compositing)
+    - Difference Between Browser's Main Thread and Offscreen Rendering
+    - Same-Origin Policy (SOP) and CORS
+    - Shadow DOM and Custom Elements
+    - Storage APIs: LocalStorage, SessionStorage, IndexedDB, Cache API
+    
+
+5. Web Security
+    - Cross-Site Scripting (XSS)
+        - Types: Stored, Reflected, DOM-based
+        - Mitigation: Content Security Policy (CSP), Input Sanitization, Output Encoding
+
+    - Cross-Site Request Forgery (CSRF)
+        - How CSRF works and how to prevent it (CSRF tokens, SameSite cookies)
+    
+    - Clickjacking
+        - X-Frame-Options, CSP frame-ancestors
+    
+    - OAuth & JWT Security
+
+        - Token-based authentication (JWT best practices)
+        - OAuth 2.0 flow for frontend
+    
+    - CORS (Cross-Origin Resource Sharing)
+        - Preflight Requests, Simple Requests, Credentialed Requests
+        - How CORS Headers work
+    
+    - HTTPS & TLS
+        - How TLS/SSL encryption works
+        - HSTS (HTTP Strict Transport Security)
