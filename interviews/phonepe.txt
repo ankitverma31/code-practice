@@ -1,0 +1,64 @@
+// import * as React from "react";
+// import { useState, useEffect } from "react";
+// import { createRoot } from "react-dom/client";
+
+function App() {
+  const [count, setCount] = useState(1)
+  console.log(1)
+  
+  useEffect(() => {
+    console.log(2)
+    return () => {
+      console.log(3)
+    }
+  }, [count])
+
+  useEffect(() => {
+    console.log(4)
+    setCount(count => count + 1)
+  }, [])
+  
+  return <Child count={count} />
+}
+
+function Child({ count }) {
+  useEffect(() => {
+    console.log(5)
+    return () => {
+      console.log(6)
+    }
+  }, [count]);
+
+  return null;
+};
+
+// const root = createRoot(document.getElementById('root'));
+// root.render(<App/>)
+
+// // OUTPUT:
+// 1, 5, 2, 4, 1, 5, 2, 4, 
+
+
+let p1 = fetch(A);      // 110ms
+let p2 = fetch(B);      // 80ms
+let p3 = fetch(C);      // 140ms
+
+
+
+const series = (arr) => {
+    const finalResult = []
+    
+    //  const seriesHelper = () => {
+    //     if(arr.lenth === 0){ // all resolved
+    //       return finalResult  
+    //     } 
+    //     const currentPromise = arr.shift()
+    //     currentPromise().then(result => {
+    //         finalResult.push(result)
+    //         seriesHelper(arr)
+    //     })
+    //  }
+    // seriesHelper(arr)
+}
+
+series([p1,p2,p3])
